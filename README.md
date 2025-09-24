@@ -16,6 +16,7 @@ pip install flask grpcio grpcio-tools
 
 
 **Estructura de carpetas**
+
 Proyecto1_SistemasDistribuidos/
 │
 ├── cliente.py
