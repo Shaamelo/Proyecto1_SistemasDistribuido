@@ -1,0 +1,28 @@
+syntax = "proto3";
+package filesvc;
+
+// Solicitud de descarga por nombre de archivo
+message FileRequest {
+  string name = 1;
+}
+
+// Chunk de archivo (se usa tanto para download como upload)
+message FileChunk {
+  string name = 1;  // nombre del archivo
+  bytes  data = 2;  // datos binarios del archivo
+}
+
+// Respuesta al terminar un upload
+message UploadAck {
+  string message = 1;
+  int32  bytes_received = 2;
+}
+
+service FileService {
+  // DESCARGA REAL: el servidor envía el archivo en chunks
+  rpc Download (FileRequest) returns (stream FileChunk);
+
+  // SUBIDA REAL: el cliente envía el archivo en chunks
+  rpc Upload (stream FileChunk) returns (UploadAck);
+}
+

@@ -1,0 +1,6 @@
+nohup: ignoring input
+[REST] 127.0.0.1:5002  shared_dir=peer2/archivos_compartidos
+ * Serving Flask app 'rest_peer'
+ * Debug mode: off
+Address already in use
+Port 5002 is in use by another program. Either identify and stop that program, or start the server with a different port.

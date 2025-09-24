@@ -1,0 +1,7 @@
+{
+  "rest": "http://127.0.0.1:5001",
+  "grpc": "127.0.0.1:6001",
+  "shared_dir": "peer1/archivos_compartidos",
+  "friend_primary": { "rest": "http://127.0.0.1:5002" },
+  "friend_backup":  { "rest": "http://127.0.0.1:5003" }
+}
