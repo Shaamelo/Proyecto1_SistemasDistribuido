@@ -14,6 +14,7 @@ Python 3.12 (probado en Google Cloud Shell).
 
 pip install flask grpcio grpcio-tools
 
+
 **Estructura de carpetas**
 Proyecto1_SistemasDistribuidos/
 │
